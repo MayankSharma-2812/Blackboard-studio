@@ -49,6 +49,7 @@ function Contact() {
         },
         body: JSON.stringify(payload),
       });
+    console.log(import.meta.env.VITE_SHEET_BEST_URL)
 
       setIsSubmitted(true);
 
