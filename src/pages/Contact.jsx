@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from "react";
+import { motion } from "framer-motion";
 import {
   Mail,
   Phone,
@@ -9,15 +9,15 @@ import {
   Building,
   User,
   MessageSquare,
-} from 'lucide-react';
+} from "lucide-react";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    schoolName: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    schoolName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -29,51 +29,70 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // In production, this would send data to a backend
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        schoolName: '',
-        email: '',
-        phone: '',
-        message: '',
+    const payload = {
+      Name: formData.name,
+      "School Name": formData.schoolName,
+      Email: formData.email,
+      Phone: formData.phone,
+      Message: formData.message,
+      Timestamp: new Date().toLocaleString(),
+    };
+
+    try {
+      await fetch(import.meta.env.VITE_SHEET_BEST_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       });
-    }, 3000);
+
+      setIsSubmitted(true);
+
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: "",
+          schoolName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      }, 3000);
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email Us',
-      detail: 'hello@blackboardstudio.in',
-      link: 'mailto:hello@blackboardstudio.in',
+      title: "Email Us",
+      detail: "hello@blackboardstudio.in",
+      link: "mailto:hello@blackboardstudio.in",
     },
     {
       icon: Phone,
-      title: 'Call Us',
-      detail: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      title: "Call Us",
+      detail: "+91 98765 43210",
+      link: "tel:+919876543210",
     },
     {
       icon: MapPin,
-      title: 'Visit Us',
-      detail: 'Jaipur, Rajasthan, India',
+      title: "Visit Us",
+      detail: "Jaipur, Rajasthan, India",
       link: null,
     },
   ];
 
   const benefits = [
-    'Free consultation and demo',
-    'Custom quote based on your needs',
-    'Quick response within 24 hours',
-    'No obligation to purchase',
+    "Free consultation and demo",
+    "Custom quote based on your needs",
+    "Quick response within 24 hours",
+    "No obligation to purchase",
   ];
 
   return (
@@ -91,11 +110,12 @@ function Contact() {
               Get In Touch
             </div>
             <h1 className="heading-xl text-slate-900 mb-6">
-              Request a Free <span className="gradient-text">School Website Demo</span>
+              Request a Free{" "}
+              <span className="gradient-text">School Website Demo</span>
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Ready to give your school a modern, professional website? 
-              Fill out the form below and we'll get back to you within 24 hours.
+              Ready to give your school a modern, professional website? Fill out
+              the form below and we'll get back to you within 24 hours.
             </p>
           </motion.div>
         </div>
@@ -114,7 +134,9 @@ function Contact() {
               className="space-y-8"
             >
               <div>
-                <h2 className="heading-sm text-slate-900 mb-6">Contact Information</h2>
+                <h2 className="heading-sm text-slate-900 mb-6">
+                  Contact Information
+                </h2>
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => {
                     const Icon = item.icon;
@@ -160,9 +182,12 @@ function Contact() {
 
               <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-6 rounded-xl border-2 border-primary-200">
                 <p className="text-primary-900 font-medium text-sm leading-relaxed">
-                  <strong>Office Hours:</strong><br />
-                  Monday - Friday: 9:00 AM - 6:00 PM<br />
-                  Saturday: 10:00 AM - 4:00 PM<br />
+                  <strong>Office Hours:</strong>
+                  <br />
+                  Monday - Friday: 9:00 AM - 6:00 PM
+                  <br />
+                  Saturday: 10:00 AM - 4:00 PM
+                  <br />
                   Sunday: Closed
                 </p>
               </div>
@@ -177,7 +202,9 @@ function Contact() {
               className="lg:col-span-2"
             >
               <div className="bg-slate-50 p-8 md:p-10 rounded-2xl shadow-xl border border-slate-200">
-                <h2 className="heading-sm text-slate-900 mb-2">Send Us a Message</h2>
+                <h2 className="heading-sm text-slate-900 mb-2">
+                  Send Us a Message
+                </h2>
                 <p className="text-slate-600 mb-8">
                   Fill out the form and we'll respond within 24 hours
                 </p>
@@ -193,7 +220,8 @@ function Contact() {
                       Thank You!
                     </h3>
                     <p className="text-green-700">
-                      Your message has been sent successfully. We'll get back to you within 24 hours.
+                      Your message has been sent successfully. We'll get back to
+                      you within 24 hours.
                     </p>
                   </motion.div>
                 ) : (
@@ -313,13 +341,17 @@ function Contact() {
                     </div>
 
                     {/* Submit Button */}
-                    <button type="submit" className="btn-primary w-full text-lg">
+                    <button
+                      type="submit"
+                      className="btn-primary w-full text-lg"
+                    >
                       Send Message
                       <Send className="ml-2 w-5 h-5" />
                     </button>
 
                     <p className="text-sm text-slate-500 text-center">
-                      By submitting this form, you agree to our privacy policy and terms of service.
+                      By submitting this form, you agree to our privacy policy
+                      and terms of service.
                     </p>
                   </form>
                 )}
@@ -372,24 +404,25 @@ function Contact() {
             <div className="space-y-6">
               {[
                 {
-                  question: 'How long does it take to build a school website?',
+                  question: "How long does it take to build a school website?",
                   answer:
-                    'Typically 2-4 weeks from design approval to launch, depending on the complexity and your content readiness.',
+                    "Typically 2-4 weeks from design approval to launch, depending on the complexity and your content readiness.",
                 },
                 {
-                  question: 'Do you provide training on how to update the website?',
+                  question:
+                    "Do you provide training on how to update the website?",
                   answer:
-                    'Yes! We provide comprehensive training to your staff and ongoing support to ensure you can easily manage your website.',
+                    "Yes! We provide comprehensive training to your staff and ongoing support to ensure you can easily manage your website.",
                 },
                 {
-                  question: 'What if we already have a domain name?',
+                  question: "What if we already have a domain name?",
                   answer:
-                    'No problem! We can work with your existing domain or help you register a new one if needed.',
+                    "No problem! We can work with your existing domain or help you register a new one if needed.",
                 },
                 {
-                  question: 'Can you migrate content from our old website?',
+                  question: "Can you migrate content from our old website?",
                   answer:
-                    'Absolutely. We\'ll carefully migrate all your existing content, images, and documents to your new website.',
+                    "Absolutely. We'll carefully migrate all your existing content, images, and documents to your new website.",
                 },
               ].map((faq, index) => (
                 <div
