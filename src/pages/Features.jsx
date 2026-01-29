@@ -30,7 +30,7 @@ function Features() {
         'Activity logs and analytics',
       ],
       color: 'from-blue-500 to-blue-700',
-      image: 'photo-1460925895917-afdab827c52f',
+      image: 'photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb',
     },
     {
       icon: Megaphone,
@@ -44,7 +44,7 @@ function Features() {
         'Archive for future reference',
       ],
       color: 'from-orange-500 to-orange-700',
-      image: 'photo-1504868584819-f8e8b4b6d7e3',
+      image: 'photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb',
     },
     {
       icon: Calendar,
@@ -58,7 +58,7 @@ function Features() {
         'Automatic reminders',
       ],
       color: 'from-green-500 to-green-700',
-      image: 'photo-1506784983877-45594efa4cbe',
+      image: 'photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb',
     },
     {
       icon: Image,
@@ -72,7 +72,7 @@ function Features() {
         'Automatic image optimization',
       ],
       color: 'from-purple-500 to-purple-700',
-      image: 'photo-1513151233558-d860c5398176',
+      image: 'photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb',
     },
     {
       icon: Smartphone,
@@ -86,7 +86,7 @@ function Features() {
         'Adaptive layouts',
       ],
       color: 'from-pink-500 to-pink-700',
-      image: 'photo-1512941937669-90a1b58e7e9c',
+      image: 'photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb',
     },
     {
       icon: Shield,
@@ -100,7 +100,7 @@ function Features() {
         '99.9% uptime guarantee',
       ],
       color: 'from-red-500 to-red-700',
-      image: 'photo-1563986768494-4dee2763ff3f',
+      image: 'photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb',
     },
     {
       icon: Edit3,
@@ -114,7 +114,7 @@ function Features() {
         'Instant changes go live',
       ],
       color: 'from-teal-500 to-teal-700',
-      image: 'photo-1455849318743-b2233052fcff',
+      image: 'photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb',
     },
   ];
 
@@ -166,7 +166,7 @@ function Features() {
               Everything Your School <span className="gradient-text">Needs</span>
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Modern features built specifically for educational institutions. 
+              Modern features built specifically for educational institutions.
               Easy to use, powerful enough to grow with your school.
             </p>
           </motion.div>
@@ -191,9 +191,8 @@ function Features() {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className={`grid lg:grid-cols-2 gap-12 items-center ${
-                    isEven ? '' : 'lg:grid-flow-dense'
-                  }`}
+                  className={`grid lg:grid-cols-2 gap-12 items-center ${isEven ? '' : 'lg:grid-flow-dense'
+                    }`}
                 >
                   <div className={isEven ? '' : 'lg:col-start-2'}>
                     <div
@@ -219,7 +218,7 @@ function Features() {
                     <div className="relative group">
                       <div className="aspect-w-16 aspect-h-10 rounded-2xl overflow-hidden shadow-2xl group-hover:shadow-3xl transition-shadow duration-300">
                         <img
-                          src={`https://images.unsplash.com/${feature.image}?w=800&h=600&fit=crop`}
+                          src={`https://images.pexels.com/${feature.image}&w=800&h=600&fit=crop`}
                           alt={feature.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />

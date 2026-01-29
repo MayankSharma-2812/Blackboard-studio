@@ -30,18 +30,21 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
+        }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-200">
-              <span className="text-white font-bold text-xl">B</span>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-200 flex-shrink-0">
+              <img
+                src="/logo.jpeg"
+                alt="Blackboard Studio Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <span className="font-display font-bold text-xl text-slate-900 group-hover:text-primary-600 transition-colors">
+            <span className="font-display font-bold text-lg sm:text-xl text-slate-900 group-hover:text-primary-600 transition-colors truncate">
               Blackboard Studio
             </span>
           </Link>
@@ -52,11 +55,10 @@ function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  location.pathname === link.path
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${location.pathname === link.path
                     ? 'text-primary-600 bg-primary-50'
                     : 'text-slate-700 hover:text-primary-600 hover:bg-slate-50'
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -105,11 +107,10 @@ function Navbar() {
                 >
                   <Link
                     to={link.path}
-                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
-                      location.pathname === link.path
+                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${location.pathname === link.path
                         ? 'text-primary-600 bg-primary-50'
                         : 'text-slate-700 hover:bg-slate-50'
-                    }`}
+                      }`}
                   >
                     {link.label}
                   </Link>

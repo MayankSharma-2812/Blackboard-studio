@@ -19,15 +19,19 @@ function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">B</span>
+              <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/logo.jpeg"
+                  alt="Blackboard Studio Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-display font-bold text-xl">
                 Blackboard Studio
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Designing modern, fast, and secure websites for schools across India. 
+              Designing modern, fast, and secure websites for schools across India.
               Empowering educational institutions with digital excellence.
             </p>
             <div className="flex space-x-3">

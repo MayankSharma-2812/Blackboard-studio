@@ -126,7 +126,7 @@ function Home() {
                 <span className="gradient-text">Modern Schools</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Replace your outdated school website with a fast, secure, and professional platform 
+                Replace your outdated school website with a fast, secure, and professional platform
                 that builds trust with parents and strengthens your digital presence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -164,7 +164,7 @@ function Home() {
             >
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=600&fit=crop"
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                   alt="Modern School Website Design"
                   className="w-full h-auto"
                 />
@@ -222,7 +222,7 @@ function Home() {
               Why Choose <span className="gradient-text">Blackboard Studio?</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We specialize exclusively in educational websites, understanding the unique needs 
+              We specialize exclusively in educational websites, understanding the unique needs
               of schools and delivering solutions that make a real difference.
             </p>
           </motion.div>
@@ -235,7 +235,7 @@ function Home() {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+                src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                 alt="School Team Collaboration"
                 className="rounded-2xl shadow-2xl"
               />
@@ -284,7 +284,7 @@ function Home() {
               <div>
                 <h3 className="heading-md mb-4">Built for Indian Schools</h3>
                 <p className="text-primary-100 mb-6">
-                  We understand CBSE, ICSE, and State Board requirements. Our designs reflect 
+                  We understand CBSE, ICSE, and State Board requirements. Our designs reflect
                   the professionalism and trust that Indian parents expect from educational institutions.
                 </p>
                 <ul className="space-y-3">
@@ -308,7 +308,7 @@ function Home() {
               </div>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop"
+                  src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                   alt="Indian School"
                   className="rounded-xl shadow-xl"
                 />
@@ -383,7 +383,7 @@ function Home() {
               Ready to Transform Your School's Digital Presence?
             </h2>
             <p className="text-xl text-slate-300 mb-10">
-              Join 50+ schools across India that trust Blackboard Studio for their website needs. 
+              Join 50+ schools across India that trust Blackboard Studio for their website needs.
               Get a free demo and see the difference a modern website can make.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

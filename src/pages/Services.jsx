@@ -123,7 +123,7 @@ function Services() {
               Our <span className="gradient-text">Services</span>
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Complete website solutions designed specifically for schools. From design to 
+              Complete website solutions designed specifically for schools. From design to
               maintenance, we handle everything so you can focus on education.
             </p>
           </motion.div>
@@ -148,9 +148,8 @@ function Services() {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
-                    isEven ? '' : 'lg:grid-flow-dense'
-                  }`}
+                  className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${isEven ? '' : 'lg:grid-flow-dense'
+                    }`}
                 >
                   <div className={isEven ? '' : 'lg:col-start-2'}>
                     <div
@@ -180,13 +179,12 @@ function Services() {
                     <div className="relative">
                       <div className="aspect-w-16 aspect-h-12 rounded-2xl overflow-hidden shadow-2xl">
                         <img
-                          src={`https://images.unsplash.com/photo-${
-                            index % 3 === 0
-                              ? '1524178264293-d5d9b13f8c73'
+                          src={`https://images.pexels.com/photos/${index % 3 === 0
+                              ? '3184291/pexels-photo-3184291'
                               : index % 3 === 1
-                              ? '1454165804606-c3d57bc86b40'
-                              : '1517245386807-bb43f82c33c4'
-                          }?w=800&h=600&fit=crop`}
+                                ? '3184338/pexels-photo-3184338'
+                                : '3184339/pexels-photo-3184339'
+                            }.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop`}
                           alt={service.title}
                           className="w-full h-full object-cover"
                         />

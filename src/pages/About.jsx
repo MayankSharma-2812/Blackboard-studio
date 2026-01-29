@@ -87,7 +87,7 @@ function About() {
               About <span className="gradient-text">Blackboard Studio</span>
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              We're on a mission to modernize school websites across India, one institution at a time. 
+              We're on a mission to modernize school websites across India, one institution at a time.
               Bringing professional web design exclusively to the education sector.
             </p>
           </motion.div>
@@ -111,18 +111,18 @@ function About() {
               </div>
               <h2 className="heading-md text-slate-900 mb-4">Our Mission</h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                To replace every outdated school website in India with a modern, fast, and secure 
-                digital platform that helps educational institutions build trust with parents and 
+                To replace every outdated school website in India with a modern, fast, and secure
+                digital platform that helps educational institutions build trust with parents and
                 enhance their online presence.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                We believe every school deserves a website that reflects the quality of education 
-                they provide. Our specialized focus on schools allows us to deliver solutions that 
+                We believe every school deserves a website that reflects the quality of education
+                they provide. Our specialized focus on schools allows us to deliver solutions that
                 truly understand and meet educational needs.
               </p>
               <div className="mt-8 p-6 bg-primary-50 rounded-xl border-2 border-primary-200">
                 <p className="text-primary-900 font-medium">
-                  "A school's website is often the first impression for prospective parents. 
+                  "A school's website is often the first impression for prospective parents.
                   It should inspire confidence, not confusion."
                 </p>
               </div>
@@ -141,13 +141,13 @@ function About() {
               </div>
               <h2 className="heading-md text-slate-900 mb-4">Our Vision</h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                To become India's most trusted partner for school website development, setting the 
-                standard for educational web design and empowering schools with world-class digital 
+                To become India's most trusted partner for school website development, setting the
+                standard for educational web design and empowering schools with world-class digital
                 infrastructure.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                We envision a future where every school in India has a professional, accessible, 
-                and modern website that serves as a powerful communication tool between the 
+                We envision a future where every school in India has a professional, accessible,
+                and modern website that serves as a powerful communication tool between the
                 institution, parents, and the community.
               </p>
               <div className="space-y-3">
@@ -179,7 +179,7 @@ function About() {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=600&fit=crop"
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                 alt="School Children Learning"
                 className="rounded-2xl shadow-2xl"
               />
@@ -195,8 +195,8 @@ function About() {
                 Why We Focus <span className="gradient-text">Only on Schools</span>
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                Specialization matters. By focusing exclusively on educational institutions, 
-                we've developed deep expertise in what schools need, what parents expect, 
+                Specialization matters. By focusing exclusively on educational institutions,
+                we've developed deep expertise in what schools need, what parents expect,
                 and how to create websites that truly serve the education sector.
               </p>
               <ul className="space-y-4">
@@ -310,12 +310,12 @@ function About() {
           >
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                We're a young, passionate startup based in India with a singular focus: making 
-                schools look professional online. Our team combines expertise in web design, 
+                We're a young, passionate startup based in India with a singular focus: making
+                schools look professional online. Our team combines expertise in web design,
                 development, and education technology to deliver solutions that schools actually need.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Every member of our team is committed to helping schools improve their digital 
+                Every member of our team is committed to helping schools improve their digital
                 presence and build stronger connections with their parent community.
               </p>
             </div>
